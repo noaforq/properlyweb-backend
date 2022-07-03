@@ -14,6 +14,7 @@ func Run() {
 	e.Use(middleware.CORS())
 
 	routes.InitArticle(e)
+	routes.InitPerson(e)
 
 	e.Logger.Fatal(e.Start(":1323"))
 }
